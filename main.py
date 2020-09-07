@@ -34,8 +34,8 @@ while price > minPrice:
 
 #EMAIL HERE -------------------------------------------------------------------------------
 
-my_mail = "tanmaymakode76@gmail.com"
-my_pass = "tanmay3makode3"  #DO SPREAD THIS PASSWORD AND GMAIL
+my_mail = ""
+my_pass = ""  #DO SPREAD THIS PASSWORD AND GMAIL
 
 #Recivers Gmail
 reciver_mail = ["rontprince@gmail.com","hiitech.ml@gmail.com","niteshp282000@gmail.com"]
