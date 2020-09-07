@@ -33,7 +33,7 @@ while price > minPrice:
 #EMAIL HERE -------------------------------------------------------------------------------
 
 my_mail = ""
-my_pass = ""  #DO SPREAD THIS PASSWORD AND GMAIL
+my_pass = ""  #DO NOT SPREAD THIS PASSWORD AND GMAIL
 
 #Recivers Gmail
 reciver_mail = ["rontprince@gmail.com","hiitech.ml@gmail.com","niteshp282000@gmail.com"]
@@ -60,7 +60,7 @@ def Send_Mail ():
     print("Message sent  to "+reciver_mail)
 
 #TRIGGER THE FUNCTION ON PRICE DROPS ____ OK
-#JUST CALL MT [Send_Mail] FUNCTION  ----------------------------------   EMAIL OVER
+#JUST CALL THE [Send_Mail] FUNCTION  ----------------------------------   EMAIL OVER
 
 
 
