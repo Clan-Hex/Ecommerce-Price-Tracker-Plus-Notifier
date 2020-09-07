@@ -19,4 +19,8 @@ while price > minPrice:
     time.sleep(120)
 
 ## Starlight and Adi put your code below /|\ And the value of the 'price' is the current/reduced price of the product - eg. print(price)
-#KK
+#EMAIL HERE
+
+
+
+#whtsapp here
