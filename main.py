@@ -13,7 +13,7 @@ from email import encoders
 #------------------------------------------------------
 import time
 
-minPrice = 1759 # You Can Change The Minimum Price (Alart Price)
+minPrice = 1759 # You Can Change The Minimum Price (Alert Price)
 price = minPrice+1 # Don't touch this line
 
 while price > minPrice:
