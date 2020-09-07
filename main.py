@@ -7,9 +7,7 @@ from bs4 import BeautifulSoup
 import smtplib,ssl
 import email
 from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.base import MIMEBase
-from email import encoders
+
 #------------------------------------------------------
 import time
 
