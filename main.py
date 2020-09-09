@@ -8,6 +8,12 @@ import smtplib,ssl
 import email
 from email.mime.multipart import MIMEMultipart
 
+#WHATSAPP IMPORTS---------------------------------------
+ 
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
 #------------------------------------------------------
 import time
 
@@ -67,3 +73,18 @@ def Send_Mail ():
 
 
 #whtsapp here
+
+browser = webdriver.Chrome("E:\\chromedriver.exe")    #THIS IS THE SELENIUM CHROMEDRIVER NEED TO DOWNLOAD FROM SELENIUM SITE
+
+whats_no = [917548035729,918483025616,917300391312,917978173296]  #OUR WHATSAPP NUMBERS
+message = "Hello, This for Testing..."
+
+for i in whats_no:
+    browser.maximize_window()
+    browser.get('https://web.whatsapp.com/send?phone='+str(i))   #WHATSAPP LINK
+    sleep(2)
+    browser.get('https://web.whatsapp.com/send?phone='+str(i))
+    sleep(5)
+    msg_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys(message+"\n")  #THIS IS PATH WHERE WE NEED TO PUT XPATH FOR TYPING
+    sleep(2)
+
