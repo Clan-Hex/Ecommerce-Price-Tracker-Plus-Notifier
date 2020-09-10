@@ -9,8 +9,8 @@ import time
 import os
 
 url="https://www.flipkart.com/redmi-8-ruby-red-64-gb/p/itm6981a578c4d90?gclid=CjwKCAjwtNf6BRAwEiwAkt6UQqkPMy_d1fXjusUG49pDHN9FE0ZQo9ZnQDlljaN7az436kt-VXt8vhoCow0QAvD_BwE&pid=MOBFKPYDCVSCZBYR&lid=LSTMOBFKPYDCVSCZBYR7PKM5A&marketplace=FLIPKART&cmpid=content_mobile_234989660_g_8965229628_gmc_pla&tgi=sem,1,G,11214002,g,search,,146618361543,,,,c,,,,,,,&ef_id=CjwKCAjwtNf6BRAwEiwAkt6UQqkPMy_d1fXjusUG49pDHN9FE0ZQo9ZnQDlljaN7az436kt-VXt8vhoCow0QAvD_BwE:G:s&s_kwcid=AL!739!3!146618361543!!!g!307944879278!"
-my_mail = "" # your gmail
-my_pass = "" # password of your gmail
+my_mail = "tanmaymakode76@gmail.com" # your gmail
+my_pass = "tanmay3makode3" # password of your gmail
 reciver_mail = ["rontprince@gmail.com","hiitech.ml@gmail.com","niteshp282000@gmail.com","tanmaymakode76@gmail.com"]
 whats_no = [917548035729,918483025616,917300391312,917978173296]
 
