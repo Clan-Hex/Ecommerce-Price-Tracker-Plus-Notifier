@@ -54,6 +54,7 @@ def Send_Mail (up=True, down=True):
     text = message.as_string()
     s.sendmail(my_mail , reciver_mail , text)
     s.quit()
+    
     print("Mail sent to -"+reciver_mail)
 
 #----------------------------------------------------------------------------------------------------------------------
