@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 import os
 
+product = "Grand Theft Auto 5"
 URL = "https://www.amazon.in/Grand-Theft-Auto-V-PS4/dp/B00L8XUDIC/ref=sr_1_1?dchild=1&keywords=playstation+5&qid=1599459476&sr=8-1"
 my_mail = "tanmaymakode76@gmail.com" # your gmail
 my_pass = "tanmay3makode3" # password of your gmail
@@ -28,15 +29,15 @@ def priceFinder():
 
 def Send_Mail (up=True, down=True):
     message = MIMEMultipart()
-    message["From"] = my_mail
+    message["From"] = 'Amazon Price BOT'
     message["To"] = 'You'
     
     if up:
-        message["Subject"] = "Amazon : The Price has been Increased!" 
-        mail = f"The price of this product ({URL}) has been Increased! "
+        message["Subject"] = "Amazon : The Price has been Increased! "+product+" Link Here -> "+URL
+        mail = f"The price of this product "+URL+" has been Increased! "+product
     elif down:
-        message["Subject"] = "Amazon : The Price has been Droped!" 
-        mail = f"The price of this product ({URL}) has been Droped! "
+        message["Subject"] = "Amazon : The Price has been Droped!"+product +" Link Here -> "+URL
+        mail = f"The price of this product "+URL+"has been Droped! "+product
 
     s = smtplib.SMTP("smtp.gmail.com",587)
     s.starttls()
@@ -49,14 +50,14 @@ def Send_Mail (up=True, down=True):
 def wpMsg(up=True, down=True):
     browser = webdriver.Chrome(os.getcwd() + '//chromedriver.exe')
     if up:
-        message = f"Amazon : The Price has been Increased! Link of the product -> {URL}"
+        message = f"Amazon : The Price has been Increased!"+product+"Link of the product -> "+URL
     elif down:
-        message = f"Amazon : The Price has been Droped! Link of the product -> {URL}"
+        message = f"Amazon : The Price has been Droped!"+product+"Link of the product -> "+URL
 
     for i in whats_no:
         browser.maximize_window()
         browser.get('https://web.whatsapp.com/send?phone='+str(i))
-        time.sleep(2)
+        time.sleep(5)
         browser.get('https://web.whatsapp.com/send?phone='+str(i))
         time.sleep(5)
         msg_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys(message+"\n")  #THIS IS PATH WHERE WE NEED TO PUT XPATH FOR TYPING
@@ -70,7 +71,7 @@ while price == currentPrice:
     if price > currentPrice:
         Send_Mail(up=True)
         wpMsg(up=True)
-    elif price < currentPrice:
+    elif price == currentPrice:
         Send_Mail(down=True)
         wpMsg(down=True)
     else:
