@@ -8,7 +8,15 @@ Data displayed by most websites can only be viewed using a web browser. They do 
 
 We have various way to scrape website like Amazon and Flipkart. So python is ridiculously fast to scrape, then motive is only for a price of the perticular product. If the price of the product is high,then it automaticlly send email and whatsapp and as well as for lower also. We have written a simple script to do this work.
 
-# Modules used-in
+# Libraries used-in
+
+1- requests           (to access website)
+2- BeautifulSoup      (to extract data from website)
+3- smtplib,ssl        (to send data through gmail)
+4- email              (to simplify the email fromat)
+5- selenium           (to send data in whatsapp)
+6- time               (programme based)
+7- os                 (programme based)
 
 
 
