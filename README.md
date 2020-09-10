@@ -10,13 +10,13 @@ We have various way to scrape website like Amazon and Flipkart. So python is rid
 
 # Libraries used-in
 
-1- requests           (to access website)
-2- BeautifulSoup      (to extract data from website)
-3- smtplib,ssl        (to send data through gmail)
-4- email              (to simplify the email fromat)
-5- selenium           (to send data in whatsapp)
-6- time               (programme based)
-7- os                 (programme based)
+1- requests           (to access website)             \n   
+2- BeautifulSoup      (to extract data from website)  \n
+3- smtplib,ssl        (to send data through gmail)    \n  
+4- email              (to simplify the email fromat)  \n
+5- selenium           (to send data in whatsapp)      \n
+6- time               (programme based)               \n
+7- os                 (programme based)               \n  
 
 
 
