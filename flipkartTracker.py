@@ -38,7 +38,7 @@ def priceFinder():
 #-----------------------------------------------------------------------------------------------------------------
 def Send_Mail (up=True, down=True):
     message = MIMEMultipart()
-    message["From"] = my_mail
+    message["From"] = 'Flipkart BOT'
     message["To"] = 'You'
     
     if up:
@@ -54,7 +54,7 @@ def Send_Mail (up=True, down=True):
     text = message.as_string()
     s.sendmail(my_mail , reciver_mail , text)
     s.quit()
-    print("Message sent!")
+    print("Mail sent to -"+reciver_mail)
 
 #----------------------------------------------------------------------------------------------------------------------
 def wpMsg(up=True, down=True):
