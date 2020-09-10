@@ -8,13 +8,21 @@ from selenium.webdriver.common.keys import Keys
 import time
 import os
 
+
+
+
 product = "Grand Theft Auto 5"
+
 URL = "https://www.amazon.in/Grand-Theft-Auto-V-PS4/dp/B00L8XUDIC/ref=sr_1_1?dchild=1&keywords=playstation+5&qid=1599459476&sr=8-1"
+
 my_mail = "tanmaymakode76@gmail.com" # your gmail
 my_pass = "tanmay3makode3" # password of your gmail
+
 reciver_mail = ["rontprince@gmail.com","hiitech.ml@gmail.com","niteshp282000@gmail.com","tanmaymakode76@gmail.com"]
+
 whats_no = [917548035729,918483025616,917300391312,917978173296]
 
+#------------------------------------------------------------------------------------------------------------
 def priceFinder():
     page = requests.get(URL, headers={"User-Agent": "Defined"})
     soup = BeautifulSoup(page.content, "html.parser")
@@ -27,6 +35,7 @@ def priceFinder():
     price = int(price)
     return price
 
+#--------------------------------------------------------------------------------------------------------------
 def Send_Mail (up=True, down=True):
     message = MIMEMultipart()
     message["From"] = 'Amazon Price BOT'
@@ -47,6 +56,7 @@ def Send_Mail (up=True, down=True):
     s.quit()
     print("Message sent!")
 
+#-------------------------------------------------------------------------------------------------------------
 def wpMsg(up=True, down=True):
     browser = webdriver.Chrome(os.getcwd() + '//chromedriver.exe')
     if up:
@@ -71,7 +81,7 @@ while price == currentPrice:
     if price > currentPrice:
         Send_Mail(up=True)
         wpMsg(up=True)
-    elif price == currentPrice:
+    elif price < currentPrice:
         Send_Mail(down=True)
         wpMsg(down=True)
     else:
