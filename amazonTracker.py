@@ -16,7 +16,7 @@ product = "Grand Theft Auto 5"
 URL = "https://www.amazon.in/Grand-Theft-Auto-V-PS4/dp/B00L8XUDIC/ref=sr_1_1?dchild=1&keywords=playstation+5&qid=1599459476&sr=8-1"
 
 my_mail = "tanmaymakode76@gmail.com" # your gmail
-my_pass = "tanmay3makode3" # password of your gmail
+my_pass = "xxxxx" # password of your gmail
 
 reciver_mail = ["rontprince@gmail.com","hiitech.ml@gmail.com","niteshp282000@gmail.com","tanmaymakode76@gmail.com"]
 
